@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "cutzgen"
+version = "1.0.0"
+description = ""
+authors = ["MJ <admin@cloudflow.dev>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+requests = "^2.27.1"
+playwright = "^1.20.1"
+playwright-stealth = "*"
+rich = "^12.0.1"
+urlextract = "^1.5.0"
+httpx = {extras = ["http2"], version = "^0.22.0"}
+Flask = "^2.1.1"
+python-dotenv = "^0.20.0"
+halo = "^0.0.31"
+pip = "^22.0.4"
+install = "^1.3.5"
+imap-tools = "^0.53.0"
+gunicorn = "^20.1.0"
+websocket-client = "^1.3.2"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+my-script = "main:start"
+server = ""
